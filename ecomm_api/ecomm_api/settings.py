@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'ecomm_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ecomm_api_db',
+        'USER': 'ecomm_user',
+        'PASSWORD': 'a_strong_password', # Use the password from step 1
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
