@@ -42,7 +42,7 @@ This project is a fully functional RESTful API for a simple e-commerce platform,
 **Search Example:** `GET /api/v1/products/?search=laptop`
 
 ## Local Setup Instructions
-1. Clone the repository: `git clone [[your-repo-url](https://github.com/Mijo258/E-commerce-API-Project)]`
+1. Clone the repository: `git clone [https://github.com/Mijo258/E-commerce-API-Project]`
 2. Create and activate a virtual environment.
 3. Install dependencies: `pip install -r requirements.txt`
 4. Set up a local MySQL database and configure the credentials in `ecomm_api/settings.py`.
