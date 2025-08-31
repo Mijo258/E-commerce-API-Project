@@ -18,3 +18,5 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'price', 'stock_quantity')
     list_filter = ('category',)
     search_fields = ('name', 'description')
+
+

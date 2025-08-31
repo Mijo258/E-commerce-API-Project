@@ -33,3 +33,12 @@ class ProductViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
     filterset_class = ProductFilter
     search_fields = ['name', 'category__name']
+
+    def perform_create(self, serializer):
+        """
+        Overrides the default create behavior to automatically assign
+        the logged-in user to the 'created_by' field.
+        """
+        # self.request.user gives us the user who made the request
+        # We pass this user to the serializer's save method
+        serializer.save(created_by=self.request.user)
