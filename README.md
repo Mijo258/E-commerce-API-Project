@@ -3,7 +3,6 @@
 ## Project Overview
 This project is a fully functional RESTful API for a simple e-commerce platform, built as the capstone for the ALX Backend Engineering curriculum. The API provides a comprehensive backend for managing products, categories, and users, with a focus on security, scalability, and adherence to professional development practices.
 
-**Live API URL:** `[Paste your live PythonAnywhere URL here]`
 
 ## Key Features
 - **Full CRUD Operations:** Create, Read, Update, and Delete for products.
