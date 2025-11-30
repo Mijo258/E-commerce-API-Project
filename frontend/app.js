@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // API Base URLs
-    const API_BASE_URL = 'http://127.0.0.1:8000';
-
+    const API_BASE_URL = ''; // An empty string makes it a relative path
+// ... now fetch(`${API_BASE_URL}/api/v1/products/`) becomes fetch('/api/v1/products/')
     // --- DOM Element Selectors ---
     const productListContainer = document.getElementById('product-list');
     const authSection = document.getElementById('auth-section');
